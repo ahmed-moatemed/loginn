@@ -1,0 +1,162 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 15px;
+}
+
+/* Main container */
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.log {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.log h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Inputs styling */
+.inputs .input {
+  margin-bottom: 15px;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+  transition: 0.2s ease-in-out;
+}
+
+.inputs input:focus {
+  background-color: white;
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Forgot password section */
+.for {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.for p {
+  font-size: 14px;
+  color: #666;
+}
+
+.for span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.for span:hover {
+  text-decoration: underline;
+}
+
+/* Buttons styling */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.buttons button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .log h2 {
+    font-size: 20px;
+  }
+
+  .inputs input {
+    font-size: 14px;
+  }
+
+  .for p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .log h2 {
+    font-size: 18px;
+  }
+
+  .inputs input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .for p {
+    font-size: 11px;
+  }
+
+  .buttons button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
